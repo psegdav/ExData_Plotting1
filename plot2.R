@@ -6,7 +6,7 @@ time <- strptime(paste(days$Date, days$Time, sep=" "), "%d/%m/%Y %H:%M:%S")
 
 finaldays <- cbind(time, days)
 
-png(file= "plot2.png")
+png(file= "plot2.png", width = 480, height = 480, units = "px")
 
 #days are in spanish, but they are right!
 plot(finaldays$time, finaldays$Global_active_power, type="l", xlab="", ylab= "Global Active Power (kilowatts)")
