@@ -7,7 +7,7 @@ time <- strptime(paste(days$Date, days$Time, sep=" "), "%d/%m/%Y %H:%M:%S")
 finaldays <- cbind(time, days)
 names(finaldays)
 
-png(file="plot3.png")
+png(file="plot3.png", width = 480, height = 480, units = "px")
 
 colors <- c("black", "red", "blue")
 label <- c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3")
