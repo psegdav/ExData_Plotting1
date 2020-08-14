@@ -6,6 +6,6 @@ time <- strptime(paste(days$Date, days$Time, sep=" "), "%d/%m/%Y %H:%M:%S")
 
 finaldays <- cbind(time, days)
 
-png(file="plot1.png")
+png(file="plot1.png", width = 480, height = 480, units = "px")
 hist(finaldays$Global_active_power, main="Global Active Power", xlab ="Global Active Power(kilowatts)", col = "red")
 dev.off()
