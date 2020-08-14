@@ -6,7 +6,7 @@ time <- strptime(paste(days$Date, days$Time, sep=" "), "%d/%m/%Y %H:%M:%S")
 
 finaldays <- cbind(time, days)
 
-png(file="plot4.png")
+png(file="plot4.png", width = 480, height = 480, units = "px")
 
 par(mfcol=c(2,2))
 #plot1
